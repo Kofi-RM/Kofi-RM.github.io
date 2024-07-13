@@ -1,0 +1,268 @@
+
+html {
+    box-sizing: border-box;
+    
+    font-size: 62.5%; 
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+
+  }
+
+html, body {
+    height: 100%;
+}
+body {
+background:rgb(252, 252, 252);
+margin: 0;
+font-family: Ubuntu, sans-serif;
+font-size: 1.6rem;
+line-height: 1.4;
+}
+
+h1, h2, h3 {
+    font-family: Neuton;
+}
+
+/* LINKS */
+
+a {
+    color:rgb(117, 11, 34);
+
+text-decoration: none;
+}
+
+a:hover {
+    color: rgb(33, 33, 93);
+}
+
+footer p, footer a {
+    color:rgb(243, 227, 226);
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: rgb(12,12,30);
+}
+
+.btn {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: .05em;
+    color:rgb(243, 227, 226);
+    background: rgb(12,12,30);
+
+    display: inline-block;
+    padding: 7px;
+    border-radius: 10px 10px 10px 10px;
+
+
+}
+
+.btn:hover {
+transform: scale(1.05);
+color:rgb(243, 227, 226);
+}
+.content-wrapper {
+    margin: 0 auto;
+    max-width: 900px;
+    
+
+}
+
+
+/* HOME  */
+.home {
+
+ background: url(/images/bg-coffee-shop.jpg) no-repeat;
+ background-size: cover; 
+ background-position: center 50%;
+ display: flex;
+ flex-direction: column;
+
+}
+
+.home .content-wrapper {  
+    flex: 1 0 auto;
+    padding: 30px;
+}
+
+.home .content-bg {
+    background:rgba(251, 251, 251, 0.8);
+    padding: 30px;
+
+}
+
+.home p {
+    font-size: 1.8rem;;
+}
+
+.home a {
+    text-decoration: underline;
+}
+/* Resume  */
+
+.resume header::before {
+    background: url(/images/bg-sunset-ocean.jpg);
+    background-size: cover;
+    background-position: 50% 80%;
+    content: ""; /* needs this even if blank */
+    display: block;
+    height: 150px;
+}
+
+
+.resume h3 {
+    font-size: 3.2rem;
+    line-height: 0%;
+}
+
+.resume-section {
+    margin-bottom: 50px;
+  
+
+}
+
+.resume-section h2 {
+    border-bottom: dashed #0C0C1E 
+}
+
+
+
+.resume p, li {
+    font-size: 1.2em;    
+}
+
+.download-link {
+    position: fixed;
+    margin:5px;
+    font-size: 1.25em;
+ 
+}
+
+@media screen and (max-width:860px) {
+    .resume .content-wrapper {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+}
+
+/* Profile */
+
+
+/* Projects  */
+
+.project-item {
+    margin-bottom: 30px;
+   
+}
+.project-item img {
+    width: 300px;
+   
+}
+
+@media screen and (min-width:860px) {
+
+    .project-item {
+        display:flow-root;
+        margin-bottom: 30px;
+    }
+
+    .project-item img {
+    float: left;
+    margin-right: 15px;
+}
+}
+@media screen and (max-width:860px) and (min-width:725px) {
+    .projects-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+}
+
+    .project-item img {
+    width: 100%;
+}
+
+.download-link {
+    font-size: .8rem;
+    position: absolute;
+}
+
+}
+
+
+/* Work Experience  */
+
+.work-item {
+   margin: 30px;
+}
+
+@media screen and (min-width:860px) {
+    .work-item {
+        display: grid;
+        grid-template-columns: 300px 1fr;
+        column-gap: 20px;
+    }
+    
+    .work-summary p:first-child {
+        margin-top: 0px;;
+    }
+}
+
+/* Education  */
+
+.course-item {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.course-item h4 {
+    font-size: larger;
+    margin:10px;
+}
+/* Footer  */
+footer {
+    background: rgb(77, 0, 17);
+    display:flex;
+    justify-content: space-between;
+    height: 75px;
+}
+
+.socials {
+    list-style-type: none ;
+    padding: 0;
+}
+
+.socials li {
+    display: inline-block;
+    margin-left: 10px; 
+}
+.socials img {
+   width: 45px;
+}
+
+.socials img:hover {
+opacity: 0.5;
+}
+.footer p {
+    font-size: 16px;
+}
+
+
+@media screen and (max-width:440px) {
+ .footer p {
+    font-size: 12px;   
+ }    
+
+ .socials img {
+    width: 25px;
+
+ }
+}
+
+/* Header  */
+
